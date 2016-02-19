@@ -1,4 +1,3 @@
-
 # Copyright: Luca Ferroni 2011
 # Author: Luca Ferroni <luca@befair.it>
 # License: GNU Affero General Public License, version 3
@@ -37,7 +36,7 @@ class ModelExtender(object):
         setattr(cls, orig_method_name, func)
 
     def contribute_to_class(self, cls, name):
-        """Check methods to be added and invoke the add method"
+        """Check methods to be added and invoke the add method."""
 
         for method_name in dir(self):
             if method_name.startswith(self.__class__.ext_prefix):
